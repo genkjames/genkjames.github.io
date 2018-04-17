@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {	
+	background:url("../images/backgrounds/starrynight_background.png");
+	background-color: black;
+}
+
+#questionContainer, #answerContainer {
+	margin: 0 auto;
+	width: 290px;
+	height: 300px;
+	border-left: 4px white solid;
+	border-right: 4px white solid;
+}
+
+#correctContainer {
+	margin: 50px auto 10px;
+	width: 290px;
+	height: 300px;
+	border: 4px white solid;
+	border-radius: 15px;
+}
+
+#questionContainer {
+	margin-top: 20px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top: 4px white solid;
+}
+
+#answerContainer {
+	margin-bottom: 20px;
+	border-bottom: 4px white solid;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+
+
+#guess, #result, #realResult {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#result {
+	border-top: 2px solid white;
+}
+
+#question {
+	color: tan;
+	margin:0;
+	font-size:2em;
+	padding-bottom: 20px;
+	font-variant:small-caps;
+	text-align:center;
+	font-weight: bold;
+}
+
+#answer {
+	height:40px;
+	width:40px;
+	border-radius:10px;
+	font-size:1.6em;
+	text-align:center;
+	outline:none;	
+}
+
+#myButton {
+	height:45px;
+	width:150px;
+	font-size:1.6em;
+	margin-left:30px;
+	outline:none;
+	border:3px tan solid;
+	font-family:"Times New Roman";
+	font-variant:small-caps;	
+	background: url("../images/backgrounds/starrynight_button.png");
+}
+
+#all {
+	padding: 3px;
+	margin-top: 40px;
+}
+
+#aligned {
+	text-align: center;
+}
+
+#correct {
+	font-size:2em;
+	font-variant:small-caps;
+	font-weight: bold;
+	text-align:center;
+	padding: 5px;	
+}
+
+#correctAnswer {
+	font-size:1.5em;
+	font-variant:small-caps;
+	font-weight: bold;
+	text-align:center;
+	padding: 5px;
+	color: tan;
+}
+
+#content {
+	margin-top: 20px;
+}
+
+.w_container {
+	border: 3px solid white;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	position: relative;
+	z-index: 2;
+	background-image:url("../images/backgrounds/one_star_background.png");
+	background-size: 100% 100%;
+}
+
+.linear_bg {
+	margin: 6px auto 0;
+	width: 96%;
+	height: 96%;
+	border-radius: 10px;
+	background-image: linear-gradient(110deg, darkblue, black);
+	z-index: 1;
+}
+
+#linear2 {
+	top: 6px;
+}
+
+#wrap a {
+	position: absolute;
+	font-variant: small-caps;
+	bottom: 0;
+	right: 0;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color: tan;
+	cursor: pointer;
+}
+
+#wrap a:hover {
+	text-decoration: underline;	
+}
+
+#playButton {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 8px 0;
+	width:170px;
+	font-size:1.6em;
+	margin:15px auto 0;
+	outline:none;
+	border:3px tan solid;
+	font-family:"Times New Roman";
+	font-variant:small-caps;	
+	background:url("../images/backgrounds/starrynight_button.png");
+}
+
+#secondContainer {
+	display: none;
+}
+
+body, #myButton, #playButton {
+	background-color: black;
+}
+
+#question, #correct, #wrap a {
+	color: tan;
+}
+
+#myButton, #playButton {
+	color:white;
+}
+
+@media screen and (min-width: 370px) {
+	#questionContainer, #answerContainer, #correctContainer {
+		width: 310px;
+	}
+}
+
+@media screen and (min-width:510px) {
+	#questionContainer, #answerContainer, #correctContainer {
+		width: 440px;
+		height: 400px;
+	}
+
+	#question {
+		font-size: 2.5em;
+	}
+
+	#all {
+		margin-top: 75px;
+	}
+
+	#correct {
+		font-size: 2.4em;
+	}
+
+	#correctAnswer {
+		font-size: 2.3em;
+	}
+
+	#content {
+		margin-top: 60px;
+	}
+
+	.linear_bg {
+		margin: 8px auto 0;
+	}
+}
+
+@media screen and (min-width:945px) {
+	#container {
+		width: 900px;
+		margin:auto;
+	}
+	#questionContainer, #answerContainer {
+		float:left;
+		margin-top: 130px;
+		padding: 0;
+		border-bottom: 4px white solid;
+	}
+
+	#questionContainer {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 15px;
+		border-right: 3px white solid;
+	}
+
+	#answerContainer {
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 15px;
+		border-top: 4px white solid;
+		border-left: 0px white solid;
+	}
+
+	#clear {
+		clear: both;
+	}
+
+	#result {
+		border-top: 0px solid white;
+	}
+
+	#correctContainer {
+		width: 500px;
+		height: 550px;
+		margin:60px auto 10px;
+	}
+
+	#correctAnswer {
+		margin-top:50px;
+		font-size: 2.5em;
+	}
+
+	#wrapper {
+		margin: 11px auto 0;
+	}
+}

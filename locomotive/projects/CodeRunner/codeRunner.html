@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Run Your Code</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../../js/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href="styles/codeRunner.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div id=wrapper>
+		<div id="menuBar">
+			<div id="logo">
+				RunYourCode
+			</div>
+			<div id="buttonDiv">
+				<button id="runButton">Run</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="tabs">
+		<nav>
+		  <li id="HTMLclick" class="toggle selected first">HTML</li>
+			<li id="CSSclick" class="toggle last" style="border:none">CSS</li>
+		</nav>
+	</div>	
+
+	<div class="clear"></div>
+
+	<div class="codeContainer" id="HTMLContainer">
+		<textarea id="htmlCode">
+<div id="test">
+<p>Run Your Code</p>
+</div></textarea>
+	</div>
+
+	<div class="codeContainer" id="CSSContainer">
+		<textarea id="cssCode">
+html {background-color:blue} 
+p {color:white; font-size:2em; margin:20px;}</textarea>
+	</div>
+
+	<div class="codeContainer" id="ResultContainer">
+		<iframe id="resultFrame"></iframe>
+	</div>
+
+	<script src="script/codeRunner.js" type="text/javascript"></script>	
+</body>
+</html>
