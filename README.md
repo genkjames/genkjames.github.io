@@ -1,1 +1,2 @@
-# genkjames.github.io
+Set up for my portfolio
+
