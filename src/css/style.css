@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 body {
   background: #f7f7f7;
 }
 
-header {
+/*header {
   height: 550px;
   text-align: center;
 }
@@ -31,7 +32,7 @@ header h1 {
 
 header p {
   font-size: 25px;
-}
+}*/
 
 .projects {
   display: flex;
