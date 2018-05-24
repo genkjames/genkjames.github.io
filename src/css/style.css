@@ -8,7 +8,7 @@ body {
   background: #f7f7f7;
 }
 
-header {
+/*header {
   height: 550px;
   text-align: center;
 }
@@ -31,7 +31,7 @@ header h1 {
 
 header p {
   font-size: 25px;
-}
+}*/
 
 .projects {
   display: flex;
