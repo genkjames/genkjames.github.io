@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #f7f7f7;
+}
+
 header {
   height: 550px;
-  background: url('../img/header.jpg') no-repeat center;
-  background-size: cover;
   text-align: center;
 }
 
@@ -31,28 +33,42 @@ header p {
   font-size: 25px;
 }
 
-.logo {
-  width: 70px;
-  height: 70px;
-  margin: 10px auto;
-  border-radius: 50%;
-  background: rgb(34, 34, 34);
-  font-family: serif;
-  position: relative;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.logo span {
-  position: absolute;
-  font-size: 30px;
+.project {
+  width: 50%;
+  height: 600px;
+  filter: grayscale(70%) brightness(.8);
+  transition: filter 500ms;
 }
 
-.logo span:nth-of-type(1) {
-  top: 15px;
-  left: 18px;
+.project:hover {
+  filter: grayscale(0%);
 }
 
-.logo span:nth-of-type(2) {
-  bottom: 8px;
-  right: 18px;
+.project:nth-of-type(1) {
+  background: url('../img/spider-solitaire2.png') center;
+  background-size: cover;
 }
 
+.project:nth-of-type(2) {
+  background: url('../img/bg.png') center;
+  background-size: cover;
+}
+
+.project:nth-of-type(3) {
+  background: url('../img/natured.jpeg') center;
+  background-size: cover;
+}
+
+.project img {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  padding: 60px 40px 40px;
+}
