@@ -47,7 +47,7 @@ header p {
 }
 
 .project:hover {
-  filter: grayscale(0%);
+  filter: none;
 }
 
 .project:nth-of-type(1) {
