@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400|Play');
 
 :root {
+  --main: #f3f3f3;
   --gray: #888;
+  --green: #3d9f81;
 }
 
 * {
@@ -11,11 +13,20 @@
 }
 
 body {
-  background: #fff;
+  background: var(--main);
   font-family: 'Assistant', 'Arial', sans-serif;
 }
 
-header, footer {
+h2 {
+  font: 300 15px 'Play', sans-serif;
+  text-transform: uppercase;
+  color: var(--green);
+  letter-spacing: 2px;
+}
+
+/* Header */
+
+.header-info, footer {
   display: flex;
   justify-content: space-between;
   padding: 70px 50px;
@@ -41,25 +52,25 @@ header a:hover, footer a:hover {
 }
 
 .about {
-  display: flex;
+  height: 500px;
   margin: 0 auto;
-  padding: 150px 60px 200px;
-  justify-content: space-between;
-  align-items: center;
+  background: url('../img/header.jpg') top center;
+  background-size: cover;
 }
 
-.about img {
-  width: 300px;
-  height: 320px;
+.about-cover {
+  background: rgba(80, 40, 23, .4);
+  padding: 60px;
 }
 
 .about p {
-  padding: 20px 80px;
-  width: calc(100% - 300px);
-  font: 300 25px 'Assistant', sans-serif;
+  padding: 20px 0;
+  max-width: 700px;
+  font: 400 24px 'Assistant', sans-serif;
+  text-shadow: 2px 2px 30px #000;
   line-height: 50px;
-  text-align: center;
   letter-spacing: 1px;
+  color: var(--main);
 }
 
 .projects {
@@ -70,7 +81,7 @@ header a:hover, footer a:hover {
 .project {
   width: 50%;
   height: 600px;
-  filter: grayscale(70%) brightness(.8);
+  filter: grayscale(50%);
   transition: filter 700ms;
 }
 
