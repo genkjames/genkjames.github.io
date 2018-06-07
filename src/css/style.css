@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400|Play');
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400|Gruppo|Akronim|Londrina+Shadow');
 
 :root {
-  --main: #f3f3f3;
+  --main: #edf0e5;
   --gray: #888;
   --green: #3d9f81;
 }
@@ -13,15 +13,15 @@
 }
 
 body {
+  background: var(--main);
   font-family: 'Assistant', 'Arial', sans-serif;
 }
 
 h2 {
-  font: 300 15px 'Play', sans-serif;
+  font: 300 45px 'Akronim', sans-serif;
   text-transform: uppercase;
-  color: var(--green);
+  /*color: var(--green);*/
   letter-spacing: 2px;
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ header, footer {
 }
 
 header h1 {
-  font: 400 24px 'Play', sans-serif;
+  font: 400 24px 'Gruppo', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--gray);
@@ -54,21 +54,21 @@ header a:hover, footer a:hover {
 }
 
 .about {
-  margin: 0 auto;
   display: flex;
 }
 
 .about-info {
   flex-basis: 50%;
-  padding: 20px 60px;
-  background: var(--main);
+  padding: 40px 60px;
+  background: #fff;
+  /*background: var(--main);*/
 }
 
 .about p {
   font: 400 18px 'Assistant', sans-serif;
   line-height: 30px;
   letter-spacing: 1px;
-  margin: 20px 0;
+  margin:  0;
 }
 
 .about-img {
