@@ -92,13 +92,20 @@ header a:hover, footer a:hover {
   flex-wrap: wrap;
   align-items: center;
   background: #fff;
+  border-top: 1px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
 }
 
 .skill {
   width: 25%;
   text-align: center;
-  border: 1px solid #d6d6d6;
   padding: 20px;
+  border-right: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.border-right {
+  border-right: 1px solid #d6d6d6;
 }
 
 .skill-img {
@@ -126,6 +133,7 @@ header a:hover, footer a:hover {
 .projects-view {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .project {
