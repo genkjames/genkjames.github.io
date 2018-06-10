@@ -18,7 +18,7 @@
 
 body {
   background: #fff;
-  font-family: 'Assistant', 'Arial', sans-serif;
+  font: 400 16px 'Assistant', 'Arial', sans-serif;
 }
 
 section {
@@ -42,16 +42,32 @@ header {
   align-items: center;
 }
 
+.header-nav {
+  opacity: 0;
+  animation: fadeIn 300ms 500ms 1 forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 .header-cover {
   width: 100%;
   height: 100%;
   background: rgba(34, 34, 34, 0.3) fixed;
 }
 
-svg {
-  width: 300px;
+.logo {
+  width: 50px;
   height: 50px;
-  border: 1px solid black;
+  font: 400 20px 'Assistant', sans-serif;
+  color: var(--gray);
+  border: 2px solid var(--gray);
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
 }
 
 .links {
@@ -69,8 +85,16 @@ header a:hover, footer a:hover {
 /* Banner */
 
 .banner {
-  padding: 90px 0;
+  padding: 90px 20px;
   text-align: center;
+  transform: translateY(200px);
+  animation: slideUp 500ms 1 forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: none;
+  }
 }
 
 .banner h1 {
@@ -164,26 +188,34 @@ header a:hover, footer a:hover {
 
 /* Projects Section */
 
+.projects {
+  padding: 60px 40px 20px;
+  background: #fff;
+}
+
+.projects-blurb {
+  text-align: center;
+  font: 400 20px 'Assistant', sans-serif;
+}
+
 .projects-view {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 50px 0 20px;
 }
 
 .project {
-  width: 50%;
+  width: 48%;
   height: 400px;
+  margin: 1%;
   filter: grayscale(50%);
   transition: filter 700ms;
 }
 
-.project:hover {
-  filter: none;
-}
-
 .project:nth-of-type(1) {
-  background: url('../img/spider-solitaire.png') center;
-  background-size: cover;
+  background: var(--gray) url('../img/spider-solitaire.png') center no-repeat;
+  background-size: contain;
+  filter: grayscale(100%);
 }
 
 .project:nth-of-type(2) {
@@ -199,6 +231,15 @@ header a:hover, footer a:hover {
 .project:nth-of-type(4) {
   background: url('../img/planahead.jpg') center;
   background-size: cover;
+}
+
+.project:hover {
+  filter: none;
+}
+
+.project::after {
+  content: "";
+  display: block;
 }
 
 .cover {
@@ -248,4 +289,5 @@ header a:hover, footer a:hover {
 footer {
   padding: 70px 40px 20px;
   font-weight: 100;
+  background: var(--dark);
 }
