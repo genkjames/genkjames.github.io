@@ -25,8 +25,6 @@ section {
   padding: 60px 0 10px;
 }
 
-
-
 /* Header Section */
 
 header {
@@ -386,6 +384,55 @@ header a:hover, footer a:hover {
 
 .project:hover .cover {
   opacity: 1;
+}
+
+/* Contact Section */
+
+.contact {
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--dark);
+  color: var(--light);
+}
+
+.contact-info {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  font: 200 30px 'Assistant', sans-serif;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font: 300 20px 'Assistant', sans-serif;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.email {
+  color: var(--dark-green);
+  font: 300 22px 'Assistant', sans-serif;
+  padding: 30px 5px;
+}
+
+.down {
+  color: var(--dark-green);
+  animation: down 800ms infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
 }
 
 /* Footer Section */
