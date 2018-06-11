@@ -367,6 +367,11 @@ header a:hover, footer a:hover {
 
 .project-info p {
   margin: 0 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.tools {
+  color: var(--dark-green);
 }
 
 .project-info a {
