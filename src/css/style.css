@@ -331,7 +331,7 @@ header a:hover, footer a:hover {
   opacity: 0;
   transition: opacity 700ms;
   color: white;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 @media screen and (max-width: 512px) {
