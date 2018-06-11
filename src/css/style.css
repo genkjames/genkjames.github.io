@@ -355,7 +355,7 @@ header a:hover, footer a:hover {
 .project-info {
   max-width: 450px;
   margin: 0px auto;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .project-info h3 {
