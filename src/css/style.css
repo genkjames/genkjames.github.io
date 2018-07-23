@@ -8,6 +8,7 @@
   --green: #3d9f81;
   --dark-green: #a9bfaf;
   --dark: #181818;
+  --blue: #0086ff;
 }
 
 * {
@@ -313,6 +314,11 @@ header a:hover, footer a:hover {
 .project.planahead {
   background: url('../img/planahead.jpg') center;
   background-size: cover;
+}
+
+.project.weather {
+  background: var(--blue) url('../img/weather.png') center no-repeat;
+  background-size: contain;
 }
 
 .project:hover {
